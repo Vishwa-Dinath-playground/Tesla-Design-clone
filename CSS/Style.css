@@ -1,0 +1,347 @@
+@font-face{
+    font-family: Tesla-Design;
+    src: url(../font/Gotham-Font/GothamBook.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+body,html {
+    font-family: Tesla-Design;
+    font-size: 14px;
+    scroll-snap-type: y mandatory;
+}
+body{
+    /* position: relative; */
+}
+#header-section{
+    height: 52px;
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    /* justify-content: center;s */
+    align-items: center;
+}
+#header-section div{
+    height: 20px;
+    width: 100%;
+    /* background-color: yellow; */
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    color: #393C41;
+}
+#header-section div a{
+    color: #393C41;
+    text-decoration: underline;
+}
+#header-section div a:hover{
+    text-decoration-thickness: 2px;
+}
+nav{
+    height: 56px;
+    /* background-color: transparent; */
+    /* background-color: aqua; */
+    width: 100%;
+    position: fixed;
+    top: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+nav > div {
+
+}
+
+nav > div:first-child{
+    /* background-color: yellow; */
+    height: 100%;
+    padding: 0 0 0 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 598.13px;
+}
+nav > div:first-child svg{
+    height: 24px;
+    width: 120px;
+    color: #171a20;
+}
+nav > div:first-child a{
+    padding: 0 16px;
+}
+nav > div:nth-child(2){
+    /* background-color: green; */
+    height: 100%;
+    padding: 0 8px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 723.75px;
+    
+}
+#main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100%;
+}
+nav > div li{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 0;
+}
+nav > div > ol > li > a {
+    padding: 4px 8px;
+    text-decoration: none;
+    color: #171A20;
+    font-weight: 600;
+}
+nav > div > ol > li:hover{
+    background-color: rgba(223, 220, 220, 0.6);
+    border-radius: 5px;
+} 
+
+nav > div:nth-child(3){
+    /* background-color: red; */
+    height: 100%;
+    padding: 0 32px 0 0;
+    width: 598.13px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#side-menu{
+    display: flex;
+    align-items: center;
+}
+#side-menu > li {
+    padding: 0 8px;
+    color: #171A20;
+}
+
+nav > div > ol > li {
+    cursor: pointer;
+}
+
+.image{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    scroll-snap-align: center;
+}
+
+.image:first-child{
+    background-image: url(../img/image1.jpeg);
+}
+.image:nth-child(2){
+    background-image: url(../img/image2.jpeg);
+}
+.image:nth-child(3){
+    background-image: url(../img/image3.jpeg);
+}
+.image:nth-child(4){
+    background-image: url(../img/image4.jpeg);
+}
+.image:nth-child(5){
+    background-image: url(../img/image5.jpeg);
+}
+.image:nth-child(6){
+    background-image: url(../img/image6.webp);
+}
+.image:nth-child(7){
+    background-image: url(../img/image7.jpeg);
+}
+
+#buttons-on-desktop{
+    height: 72px;
+    width: 552px;
+    /* background-color: red; */
+    position: fixed;
+    top: 85vh;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 0 16px;
+    padding: 16px 0;
+    display: flex;
+    justify-content:center;
+}
+#buttons-on-desktop section{
+    height: 40px;
+    /* background-color: yellow; */
+}
+#buttons-on-desktop button{
+    width: 264px;
+    height: 40px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#buttons-on-desktop > section > a:first-child button{
+    background-color: #171A20CC;
+    color: #FFFFFF;
+}
+#buttons-on-desktop > section > a:last-child button{
+    background-color: #F4F4F4A6;
+    color: #393C41;
+}
+
+#head-title{
+    height: 48px;
+    position: fixed;
+    /* top: 18vh; */
+    width: 100%;
+    margin: 175px 0 0 0;
+    padding: 0 24px;
+    color: #171A20;
+    display: flex;
+    justify-content: center;
+}
+#head-title h1{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+}
+#sub-title{
+    height: 40px;
+    width: 792px;
+    position: fixed;
+    top: 223px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 14px 24px;
+    display: flex;
+    justify-content: center;
+}
+#sub-title a{
+    color: #171A20;
+}
+
+#arrow{
+    position: fixed;
+    top: 95vh;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+#arrow img{
+    height: 25px;
+    width: 25px;
+    color: #393C41;
+    animation-name: blinking-arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+@keyframes blinking-arrow{
+    from{
+        top: 0;
+    }
+    50%{
+        top: 40%;
+    }
+    75%{
+        top: 0;
+    }
+    to{
+        top: 20%;
+    }
+}
+
+ /* #side-menu-bar{
+    height: 100vh;
+    width: 331px;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 0;
+    top: -52px;
+} */
+/* #side-menu-bar > div:first-child{
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: aqua;
+} */
+/* #side-menu-bar > div:first-child button{
+    background-color: #FFFFFF;
+    border: none;
+    background-color: chartreuse;
+} */
+/* aside > div:first-child button svg{
+    height: 24px;
+    width: 24px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+} */
+/* aside > div:nth-child(2){
+    height: 668px;
+    padding: 4px 32px 48px;
+    background-color: aquamarine;
+} */
+/*#menu-list ol{
+    height: 616px;
+    display: flex;
+    flex-direction: column;
+}
+#menu-list ol li{
+    display: flex;
+    flex-grow: 1;
+    font-weight: 600;
+    color: #393C41;
+    align-items: center;
+    margin: 4px 0;
+}
+#menu-list ol li:hover{
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+#menu-list ol li > a{
+    height: 32px;
+    padding: 4px 8px;
+    margin: 0 4px;
+}
+#country-logo{
+    display: flex;
+}
+#country-logo svg{
+    height: 24px;
+    width: 24px;
+    margin: 8px 0 24px 8px;
+    padding: 1;
+}
+#country-logo > div{
+    padding: 8px 12px 8px 8px;
+}
+#country-logo > div a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #5C5E62;
+    padding: 12px 0 0;
+}*/
+#side-menu > li > button{
+    color: #171A20;
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    font-family: Tesla-design;
+    font-size: 14px;
+}
+/* #side-menu>li:nth-child(3):hover #side-menu-bar{
+    background-color: aqua;
+    visibility: visible;
+}  */
+
+
+
+
